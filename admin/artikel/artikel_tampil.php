@@ -4,7 +4,7 @@
   <tr>
   <th>No</th>
   <th>Judul Artikel</th>
-  <th>Tanggal</th>
+  <th>Isi</th>
   <th>Aksi</th>
   </tr>
 <?php
@@ -18,10 +18,10 @@
   <tr>
   <td><?php echo $no; ?> </td>
   <td><?php echo $data['judul']; ?></td>
-  <td><?php echo $data['tanggal']; ?></td>
+  <td><?php echo $data['isi']; ?></td>
   <td>
-  <a href="?tampil=artikel_edit&id=<?php echo $data['id_artikel']; ?>"> Edit </a> |
-  <a href="?tampil=artikel_hapus&id=<?php echo $data['id_artikel']; ?>"> Hapus </a>
+  <a href="?tampil=artikel_edit&id=<?php echo $data['id_article']; ?>"> Edit </a> |
+  <a href="?tampil=artikel_hapus&id=<?php echo $data['id_article']; ?>"> Hapus </a>
   </td>
   </tr>
 <?php
