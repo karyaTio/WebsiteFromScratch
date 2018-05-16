@@ -1,5 +1,4 @@
 <?php
-  echo "I am visible";
   $nama_gambar = $_FILES['gambar']['name'];
   $lokasi_gambar = $_FILES['gambar']['tmp_name'];
   $tipe_gambar = $_FILES['gambar']['type'];
@@ -9,10 +8,10 @@
   $sql = "";
 
   if($lokasi_gambar=="") {
-    $sql = "INSERT INTO artikel SET judul = '$_POST[judul]', isi = '$isi', tanggal = '$tanggal'"
+    $sql = "INSERT INTO artikel SET judul = '$_POST[judul]', isi = '$isi', tanggal = '$tanggal'";
   }else {
     move_uploaded_file($lokasi_gambar, "../gambar/artikel/$nama_gambar");
-    $sql = "INSERT INTO artikel SET judul = '$_POST[judul]', isi = '$isi', tanggal = '$tanggal',gambar = '$nama_gambar'"
+    $sql = "INSERT INTO tbl_article SET judul = '$_POST[judul]', isi = '$isi', tanggal = '$tanggal',gambar = '$nama_gambar'";
   }
 
   if($conn->query($sql) === TRUE){

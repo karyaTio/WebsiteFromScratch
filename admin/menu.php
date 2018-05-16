@@ -1,4 +1,4 @@
-<ul class="left”>
+<ul class="left">
     <li><a href="admin.php"> Beranda</a></li>
     <li><a href="?tampil=menu"> Menu</a></li>
     <li><a href="?tampil=halaman"> Halaman</a></li>
